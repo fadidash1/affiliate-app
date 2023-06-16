@@ -1,0 +1,336 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#dark-mode-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    color: #666;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -10px;
+}
+
+.product {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product a:hover {
+    background-color: #0056b3;
+}
+
+/* Product Details */
+.product-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.product-info {
+    flex-grow: 1;
+    padding-left: 40px;
+}
+
+.product-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-info a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-info a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    color: #f8f8f8;
+    background-color: #333;
+}
+
+header.dark-mode {
+    background-color: #222;
+}
+
+nav ul li a.dark-mode {
+    color: #f8f8f8;
+}
+
+#dark-mode-toggle.dark-mode {
+    color: #f8f8f8;
+}
+
+a.dark-mode {
+    color: #007bff;
+}
+
+a.dark-mode:hover {
+    color: #0056b3;
+}
+
+.hero.dark-mode {
+    background-color: #0056b3;
+    color: #f8f8f8;
+}
+
+.product.dark-mode {
+    background-color: #222;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product.dark-mode:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product.dark-mode h3 {
+    color: #f8f8f8;
+}
+
+.product.dark-mode p {
+    color: #f8f8f8;
+}
+
+.product.dark-mode a {
+    background-color: #f8f8f8;
+    color: #007bff;
+}
+
+.product.dark-mode a:hover {
+    background-color: #0056b3;
+    color: #f8f8f8;
+}
+
+footer.dark-mode {
+    background-color: #555;
+    color: #f8f8f8;
+}
+/* Contact Us Section */
+.contact-section {
+    padding: 40px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 400px;
+    /* Adjusted width */
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 20px;
+}
